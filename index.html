@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Discover Your World</title>
+    <link
+      rel="icon"
+      href="https://edube.org/uploads/media/default/0001/04/web-favicon.png"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Explore the World &#x1F30D;</h1>
+      <p>
+        Click a continent on the map or discover your current continent using
+        the button below.
+      </p>
+    </header>
+    <p>
+      <button id="getLocation">Discover Location</button>
+    </p>
+    <p id="locationResult" aria-live="polite"></p>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg"
+      alt="World map"
+      usemap="#worldmap"
+      style="max-width: 100%; height: auto"
+    />
+
+    <map name="worldmap" id="worldmap">
+      <area
+        alt="North America"
+        title="North America"
+        id="north-america"
+        shape="rect"
+        coords="386,283,41,17"
+        href="#"
+      />
+      <area
+        alt="South America"
+        title="South America"
+        id="south-america"
+        shape="rect"
+        coords="209,501,358,288"
+        href="#"
+      />
+      <area
+        alt="Europe"
+        title="Europe"
+        id="europe"
+        shape="rect"
+        coords="391,68,505,217"
+        href="#"
+      />
+      <area
+        alt="Africa"
+        title="Africa"
+        id="africa"
+        shape="rect"
+        coords="533,217,387,448"
+        href="#"
+      />
+      <area
+        alt="Asia"
+        title="Asia"
+        id="asia"
+        shape="rect"
+        coords="893,153,506,1"
+        href="#"
+      />
+      <area
+        alt="Australia and Oceania"
+        title="Australia and Oceania"
+        id="australia-and-oceania"
+        shape="rect"
+        coords="679,353,872,480"
+        href="#"
+      />
+    </map>
+
+    <section id="info" style="margin-top: 1rem">
+      <h2 id="infoTitle">Continent Info</h2>
+      <div id="infoContent">
+        Click a continent on the map to learn an interesting fact.
+      </div>
+    </section>
+  </body>
+</html>
